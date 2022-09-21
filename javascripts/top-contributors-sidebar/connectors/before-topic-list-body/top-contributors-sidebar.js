@@ -15,7 +15,7 @@ export default {
               }
               component.set("isDiscoveryList", true);
 
-              fetch(`/directory_items.json?period=yearly&order=likes_received`)
+              fetch(`/directory_items.json?period=weekly&order=likes_received`)
                 .then((response) => response.json())
                 .then((data) => {
                   component.set("hideSidebar", false);
